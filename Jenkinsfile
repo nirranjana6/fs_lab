@@ -17,7 +17,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // Run pytest using the correct Python environment
-                bat 'python -m pytest fs_lab/tests'
+                bat 'python -m pytest fs_lab/test_app.py'
             }
         }
     }
